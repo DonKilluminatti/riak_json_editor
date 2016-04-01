@@ -40,15 +40,15 @@ JSONEditor.prototype.initAdditionalTools = function(){
 						editor.format();
 						opType = opType || 'obtain';
 						self.showMessage('Last ' + opType + ' ' + new Date());
-
-						self.feelMetas();
 					}
 					else if(res.status == 304){
 						self.showMessage('Not modified');
 					}
+					self.feelMetas();
 				},
 				error: function(err){
 					self.showMessage('Obtain error: ' + err.responseText, true);
+					self.feelMetas();
 				},
 				url: document.URL,
 				type: 'GET'
@@ -77,7 +77,7 @@ JSONEditor.prototype.initAdditionalTools = function(){
 				data: stringifyedData,
 				type: 'PUT',
 				headers: {
-					'Link': self.riak.links
+					'Link': self.riak.links || undefined
 				}
 			};
 
