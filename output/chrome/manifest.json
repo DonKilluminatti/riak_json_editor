@@ -27,7 +27,7 @@
     "background": {
         "page": "background.html"
     }, 
-    "version": "0.9.5", 
+    "version": "0.9.5.1", 
     "options_page": "options.html", 
     "manifest_version": 2, 
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'", 
