@@ -38,6 +38,7 @@ JSONEditor.prototype.initAdditionalTools = function(){
 
 						editor.setText(res.responseText);
 						editor.format();
+						opType = opType || 'obtain';
 						self.showMessage('Last ' + opType + ' ' + new Date());
 
 						self.feelMetas();
