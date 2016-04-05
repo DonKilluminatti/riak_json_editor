@@ -5,7 +5,7 @@
 // @include ftp://*/*
 // @include file:///*
 // @require jquery-1.8.2.min.js
-// @require jsoneditor.min.js
+// @require jsoneditor.js
 // ==/UserScript==
 var $ = window.$.noConflict(true); // Required for Opera and IE
 
